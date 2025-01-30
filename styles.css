@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #1a1a1a !important;
+}
+.navbar-brand {
+    color: #00aaff !important;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #00aaff !important;
+}
+
+/* Sección Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    color: #00aaff;
+}
+.hero p {
+    font-size: 1.5rem;
+    color: #bbbbbb;
+}
+.scroll-indicator {
+    width: 2px;
+    height: 50px;
+    background-color: #00aaff;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    animation: scrollBlink 1.5s infinite alternate;
+}
+@keyframes scrollBlink {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+
+/* Sección Sobre mí */
+.about {
+    padding: 50px 0;
+}
+.profile-img {
+    border-radius: 10px;
+    max-width: 70%;
+}
+
+/* Proyectos */
+#proyectos h2 {
+    margin-bottom: 40px;
+}
+.project-card {
+    color: #ffffff;
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Aseguramos que las imágenes tengan el mismo tamaño y no distorsionen */
+.project-card img {
+    width: 100%;
+    height: 200px; /* Establece la altura fija para todas las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 5px;
+}
+
+/* Hover de las cartas */
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+.footer-links a {
+    color: #00aaff;
+    text-decoration: none;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
